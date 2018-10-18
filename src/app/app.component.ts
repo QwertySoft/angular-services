@@ -12,7 +12,7 @@ export class AppComponent {
 
   // Constructor del componente AppComponent
   constructor(
-    private apiService: ApiService
+    private apiService: ApiService // Inyectamos el servicio ApiService que acabamos de crear
   ) {
     // Seteamos la propiedad 'text' del componente root de nuestra app con lo que nos devuelve el servicio
     this.text = this.apiService.getText();
